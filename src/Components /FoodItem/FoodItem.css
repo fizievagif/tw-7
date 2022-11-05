@@ -1,0 +1,6 @@
+.food-item {
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 45%;
+    margin-bottom: 10px;
+}
