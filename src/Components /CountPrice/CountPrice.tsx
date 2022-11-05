@@ -1,15 +1,12 @@
 import React from 'react';
+import './CountPrice.css';
 
 interface Props {
   price: number;
 }
 
 const CountPrice: React.FC<Props> = (props) => {
-  return (
-    <div>
-      <p>Total price: {props.price}</p>
-    </div>
-  );
+  return <p><b>Total price: </b>{props.price}</p>;
 };
 
 export default CountPrice;

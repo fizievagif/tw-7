@@ -4,3 +4,10 @@
   padding: 15px;
   display: flex;
 }
+
+.count-block {
+  border: 1px solid grey;
+  width: 50%;
+  margin-left: 5px;
+  padding-top: 20px;
+}

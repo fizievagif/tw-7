@@ -13,10 +13,9 @@ const FoodMenu: React.FC<Props> = (props) => {
     <div className="food-menu">
       {props.foodProduct.map(item => (
         <FoodItem
-          onItemsClick={() => props.onItemClick(item.name)}
           key={item.id}
-          name={item.name}
-          price={item.price}
+          onItemsClick={() => props.onItemClick(item.name)}
+          items={item}
         />
       ))}
     </div>

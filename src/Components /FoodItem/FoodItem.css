@@ -3,4 +3,12 @@
     border-radius: 5px;
     width: 45%;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img {
+    width: 60px;
+    height: 60px;
 }

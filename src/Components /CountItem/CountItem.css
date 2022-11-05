@@ -1,0 +1,16 @@
+.count-item {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
+    margin: 20px;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.del-in {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
