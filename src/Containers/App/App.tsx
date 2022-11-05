@@ -3,8 +3,8 @@ import FoodMenu from "../../Components /FoodMenu/FoodMenu";
 import CountPrice from "../../Components /CountPrice/CountPrice";
 import drink from '../../assets/drink.png';
 import meal from '../../assets/meal.png';
-import './App.css';
 import CountItem from "../../Components /CountItem/CountItem";
+import './App.css';
 
 function App() {
   const [foodItems, setFoodItem] = useState([
@@ -43,15 +43,14 @@ function App() {
           price={item.price}
           deleteItem={() => deleteIngredient(index)}/>
         : null
-    })
-
+    });
 
   const deleteIngredient = (index: number) => {
     setFoodItem(prevState => prevState.map((item, indx) =>
-      index === indx ? {...item, count: 0} : item))
-  }
+      index === indx ? {...item, count: 0} : item));
+  };
 
-  const isCardEmpty = foodItems.every((item) => item.count === 0)
+  const isCardEmpty = foodItems.every((item) => item.count === 0);
 
   return (
     <div className="container">
